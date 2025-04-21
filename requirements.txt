@@ -3,7 +3,7 @@ uvicorn
 python-multipart
 PyMuPDF
 scikit-learn
-nltk
+nltk==3.9.1
 numpy
 gTTS
 python-docx
