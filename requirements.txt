@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+python-multipart
+PyMuPDF
+scikit-learn
+nltk
+numpy
+gTTS
+python-docx
+moviepy==1.0.3
+SpeechRecognition==3.10.0

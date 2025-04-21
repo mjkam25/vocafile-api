@@ -1,0 +1,9 @@
+/
+├── main.py           # Point d'entrée FastAPI
+├── pdf_reader.py     # Extraction de texte des PDF
+├── summarizer.py     # Logique de résumé
+├── tts.py            # Synthèse vocale
+├── video_processor.py # Nouveau: traitement vidéo
+├── audio_processor.py # Nouveau: traitement audio
+├── .replit           # Configuration Replit
+└── requirements.txt  # Dépendances
