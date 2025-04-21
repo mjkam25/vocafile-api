@@ -19,7 +19,10 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+import os
 os.makedirs("static/output", exist_ok=True)
+from fastapi.staticfiles import StaticFiles
+app.mount("/static", StaticFiles(directory="static"), name="static")
 
 # AJOUTEZ CETTE ROUTE RACINE
 @app.get("/")

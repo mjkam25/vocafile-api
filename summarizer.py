@@ -1,14 +1,12 @@
+import nltk
+import os
+
+# Ajoute le chemin local à NLTK
+nltk.data.path.append(os.path.join(os.path.dirname(__file__), "nltk_data"))
+
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
-import nltk
 import numpy as np
-
-# Téléchargement unique du tokenizer
-try:
-    nltk.data.find('tokenizers/punkt')
-except LookupError:
-    nltk.download('punkt')
-
 from nltk.tokenize import sent_tokenize
 
 def summarize_text(text, max_sentences=5):
